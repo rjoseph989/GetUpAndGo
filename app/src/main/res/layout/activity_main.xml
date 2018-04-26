@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@color/backColor"
+    tools:context="com.example.rjoseph.getupandgo.MainActivity">
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="69dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/manicon"
+        app:layout_constraintEnd_toStartOf="@+id/age"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="128dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginTop="16dp"
+        android:text="Name: John Doe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="136dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginTop="8dp"
+        android:text="Age: 22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <ImageButton
+        android:id="@+id/flashlightBtn"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/flashlight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <ImageButton
+        android:id="@+id/navigationBtn"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/navigation"
+        app:layout_constraintEnd_toStartOf="@+id/flashlightBtn"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <ImageButton
+        android:id="@+id/whistleBtn"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/whistle"
+        app:layout_constraintEnd_toStartOf="@+id/navigationBtn"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <ImageButton
+        android:id="@+id/findHikingTrailBtn"
+        android:layout_width="158dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/findhikingtrail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whistleBtn" />
+
+    <ImageButton
+        android:id="@+id/analyzeSurroundingsBtn"
+        android:layout_width="158dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/analyzesurroundings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flashlightBtn" />
+
+    <ImageButton
+        android:id="@+id/healthAnalyticsBtn"
+        android:layout_width="158dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/healthanalytics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/analyzeSurroundingsBtn" />
+
+    <ImageButton
+        android:id="@+id/trackGearBtn"
+        android:layout_width="158dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/trackgear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBtn" />
+
+    <ImageButton
+        android:id="@+id/startStopHikeBtn"
+        android:layout_width="158dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/startstophike"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findHikingTrailBtn" />
+
+    <ImageButton
+        android:id="@+id/postInstagramBtn"
+        android:layout_width="158dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/posttoinstagram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/healthAnalyticsBtn" />
+
+    <ImageButton
+        android:id="@+id/ratingBtn"
+        android:layout_width="158dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rating"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startStopHikeBtn" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="158dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/contactem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postInstagramBtn" />
+
+</android.support.constraint.ConstraintLayout>
